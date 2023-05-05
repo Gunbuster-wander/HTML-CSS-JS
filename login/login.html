@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <header class="el-header header-nav" style="height: auto;">
+        <div  class="wbb_top">
+            <div   class="wbb_top_content clearfix" style="position: relative;">
+                <div   class="fl" style="display: flex;"> 您好！ 
+                    <span style="display: flex;" >
+                        <a href="login.html">请登录</a>
+                        <i class="color1">|</i>
+                        <a href="register.html">免费注册</a>
+                    </span>
+                </div>
+                <div   class="fr">
+                    <a   href="../index.html">傲彩首页</a>
+                </div>
+                <div   class="clear"></div>
+            </div>
+        </div>
+        <div   class="logo_div">
+            <div   class="content">
+                <h1  >
+                    <a   href="#">
+                        <img   src="https://www.aocai.cn/img/logo.8a3304db.png">
+                        <img   src="https://www.aocai.cn/img/logo.12c2e733.gif" style="margin-top: 15px;">
+                    </a>
+                </h1>
+                <div   class="clear"></div>
+            </div>
+        </div>
+    </header>
+    <main   class="el-main login-main">
+        <div    class="w_login_0606">
+            <div   class="login_box">
+                <div   class="loginWap">
+                    <div   class="tabs loginCut flex">
+                        <span   class="hover">密码登录</span>
+                        <span class="">短信登录</span>
+                    </div>
+                    <div   class="loginTab">
+                        <div   class="item loginTabox" style="display: block;">
+                            <ul   class="loginLs">
+                                <li  >
+                                    <div   class="el-input el-input-group el-input-group--prepend">
+                                        <div class="el-input-group__prepend">
+                                            <i   class="el-icon-user"></i>
+                                        </div>
+                                        <input type="text" autocomplete="off" placeholder="请输入手机号" class="el-input__inner">
+                                        <!---->
+                                        <!---->
+                                        <!---->
+                                        <!---->
+                                    </div>
+                                </li>
+                                <li  >
+                                    <div   class="el-input el-input-group el-input-group--prepend">
+                                        <div class="el-input-group__prepend">
+                                            <i   class="el-icon-lock"></i>
+                                        </div>
+                                        <input type="password" autocomplete="off" placeholder="请输入密码" class="el-input__inner">
+                                        <!---->
+                                        <!---->
+                                        <!---->
+                                        <!---->
+                                    </div>
+                                </li>
+                            </ul>
+                            <div   title="为了您的信息安全，请不要在公共电脑上使用此功能" class="loginItem flex">
+                                <label class="flex">
+                                    <label   class="el-checkbox">
+                                        <!-- <span class="el-checkbox__input">
+                                            <span class="el-checkbox__inner"></span>
+                                            <input type="checkbox"  class="el-checkbox__original">
+                                        </span> -->
+                                        <input type="checkbox" class="login-checkbox">
+                                        <span class="el-checkbox__label">下次自动登录<!----></span>
+                                    </label>
+                                </label>
+                            </div>
+                            <input type="submit" id="submit" value="密码登录" class="w_submit0606 loginBnt">
+                            <div   class="logCode flex">
+                                <a   href="#" class="">忘记登录密码？</a>
+                                <a   href="register.html" class="">免费注册</a>
+                            </div>
+                        </div>
+                        <div   class="item loginTabox" style="display: none;">
+                            <ul   class="loginLs">
+                                <li  >
+                                    <div   class="el-input el-input-group el-input-group--prepend">
+                                        <div class="el-input-group__prepend">
+                                            <i   class="el-icon-phone-outline"></i>
+                                        </div>
+                                        <input type="text" autocomplete="off" placeholder="请输入手机号" class="el-input__inner">
+                                        <!---->
+                                        <!---->
+                                        <!---->
+                                        <!---->
+                                    </div>
+                                </li>
+                                <li  >
+                                    <div   class="el-input el-input-group el-input-group--prepend">
+                                        <div class="el-input-group__prepend">
+                                            <i   class="el-icon-chat-dot-square"></i>
+                                        </div>
+                                        <input type="text" autocomplete="off" placeholder="请输入短信验证码" class="el-input__inner">
+                                        <!---->
+                                        <!---->
+                                        <!---->
+                                        <!---->
+                                    </div>
+                                    <button  disabled="disabled" type="button" class="el-button el-button--default is-disabled" style="margin-left: 10px;">
+                                        <!---->
+                                        <!---->
+                                        <span>获取验证码</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div   title="为了您的信息安全，请不要在公共电脑上使用此功能" class="loginItem flex">
+                                <label class="flex">
+                                    <label  class="el-checkbox">
+                                        <!-- <span class="el-checkbox__input">
+                                            <span class="el-checkbox__inner"></span>
+                                            <input type="checkbox" class="el-checkbox__original">
+                                        </span> -->
+                                        <input type="checkbox" class="login-checkbox">
+                                        <span class="el-checkbox__label">下次自动登录<!----></span>
+                                    </label>
+                                </label>
+                                <a href="/register" class="">免费注册</a>
+                            </div>
+                            <input type="submit" id="mobile_submit" value="短信登录" class="w_submit0606 loginBnt">
+                            <div class="loginItem"></div>
+                        </div>
+                    </div>
+                    <!-- <div   class="loginSt">
+                        <span   class="loginStx">成交动态:</span>
+                        <div  id="viewlist" class="scroll_vertical">
+                            <div  class="box">
+                                <div  class="el-carousel el-carousel--vertical">
+                                    <div class="el-carousel__container">
+                                        
+                                        <div   class="el-carousel__item" style="transform: translateY(900px) scale(1);">
+                                            
+                                            <li   style="font-size: 12px;">姜** 183****2422 卡纸盒-自定义盒型 ￥2214 </li>
+                                        </div>
+                                        <div   class="el-carousel__item" style="transform: translateY(900px) scale(1);">
+                                             
+                                            <li   style="font-size: 12px;">张** 136****8315 内托-坑纸内托 ￥140 </li>
+                                        </div>
+                                        <div   class="el-carousel__item" style="transform: translateY(900px) scale(1);">
+                                             
+                                            <li   style="font-size: 12px;">王** 184****8157 卡纸盒-自定义盒型 ￥569 </li>
+                                        </div>
+                                        <div   class="el-carousel__item" style="transform: translateY(900px) scale(1);">
+                                             
+                                            <li   style="font-size: 12px;">李** 150****2427 卡纸盒-自定义盒型 ￥840 </li>
+                                        </div>
+                                        <div   class="el-carousel__item" style="transform: translateY(900px) scale(1);">
+                                             
+                                            <li   style="font-size: 12px;">张** 153****3783 卡纸盒-自定义盒型 ￥251 </li>
+                                        </div>
+                                        <div   class="el-carousel__item" style="transform: translateY(900px) scale(1);">
+                                             
+                                            <li   style="font-size: 12px;">张** 153****3783 卡纸盒-自定义盒型 ￥251 </li>
+                                        </div>
+                                        <div   class="el-carousel__item" style="transform: translateY(900px) scale(1);">
+                                             
+                                            <li   style="font-size: 12px;">张** 153****3783 卡纸盒-自定义盒型 ￥251 </li>
+                                        </div>
+                                        <div   class="el-carousel__item" style="transform: translateY(900px) scale(1);">
+                                             
+                                            <li   style="font-size: 12px;">张** 153****3783 卡纸盒-自定义盒型 ￥251 </li>
+                                        </div>
+                                        <div   class="el-carousel__item" style="transform: translateY(900px) scale(1);">
+                                             
+                                            <li   style="font-size: 12px;">张** 153****3783 卡纸盒-自定义盒型 ￥463 </li>
+                                        </div>
+                                        <div   class="el-carousel__item" style="transform: translateY(900px) scale(1);">
+                                             
+                                            <li   style="font-size: 12px;">一** 138****1897 卡纸盒-自定义盒型 ￥15002 </li>
+                                        </div>
+                                        <div   class="el-carousel__item" style="transform: translateY(900px) scale(1);">
+                                             
+                                            <li   style="font-size: 12px;">一** 138****1897 卡纸盒-自定义盒型 ￥15002 </li>
+                                        </div>
+                                        <div   class="el-carousel__item" style="transform: translateY(900px) scale(1);">
+                                             
+                                            <li   style="font-size: 12px;">一** 138****1897 卡纸盒-自定义盒型 ￥15002 </li>
+                                        </div>
+                                        <div  class="el-carousel__item" style="transform: translateY(900px) scale(1);">
+                                             
+                                            <li   style="font-size: 12px;">一** 138****1897 卡纸盒-自定义盒型 ￥15002 </li>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>  -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="index-footer footer" style="height: 60px;">
+        <div class="footTop">
+            <div class="comBox">
+                <ul class="footEnsure">
+                    <li>
+                        <img src="https://www.aocai.cn/img/foot1.3ffc94fd.png" alt="">
+                    </li>
+                    <li>
+                        <img src="https://www.aocai.cn/img/foot2.b8c0ca2e.png" alt="">
+                    </li>
+                    <li>
+                        <img src="https://www.aocai.cn/img/foot3.6db890c5.png" alt="">
+                    </li>
+                    <li>
+                        <img src="https://www.aocai.cn/img/foot4.d40e186e.png" alt="">
+                    </li>
+                </ul>
+                <div class="footTxtBx">
+                    <ul class="footTxtUl">
+                        <li>
+                            <h2>使用指南</h2>
+                            <div>
+                                <a href="#" class target="_blank">常见问题</a>
+                                <a href="#" class target="_blank">新手指南</a>
+                                <a href="#" class target="_blank">3D打样要求</a>
+                                <a href="#" class target="_blank">确认订单教程</a>
+                                <a href="#" class target="_blank">下载与打开刀模</a>
+                                <a href="#" class target="_blank">打样订单下单规范</a>
+                            </div>
+                        </li>
+                        <li>
+                            <h2>下单须知</h2>
+                            <div>
+                                <a href="#" class target="_blank">物流配送说明</a>
+                                <a href="#" class target="_blank">印刷资质要求与模板</a>
+                                <a href="#" class target="_blank">商品包装与收货通知</a>
+                                <a href="#" class target="_blank">规范化文件与刀模说明</a>
+                                <a href="#" class target="_blank">生产货期计算说明</a>
+                                <a href="#" class target="_blank">支付与发票须知</a>
+                            </div>
+                        </li>
+                        <li>
+                            <h2>售后服务</h2>
+                            <div>
+                                <a href="#" class target="_blank">退货与退款须知</a>
+                                <a href="#" class target="_blank">售后服务流程</a>
+                                <a href="#" class target="_blank">质量问题免费重做</a>
+                                <a href="#" class target="_blank">出货超时赔付承诺</a>
+                                <a href="#" class target="_blank">纸类包装仓储与存放须知</a>
+                            </div>
+                        </li>
+                        <li>
+                            <h2>包装设计模板</h2>
+                            <div>
+                                <a href="#" class target="_blank">设计模板购买说明</a>
+                                <a href="#" class target="_blank">设计模板版权声明</a>
+                                <a href="#" class target="_blank">包装设计师招募</a>
+                                <a href="#" class target="_blank">设计模板上传规范</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="footTel">
+                        <h1>0755-36567904</h1>
+                    <p class="footTelTime">
+                        周一至周五: 8:30-21:00
+                        <br>
+                        周六至周日: 9:00-18:00
+                    </p>
+                    <div class="footTContact">
+                        <span class="icon icon-contact"></span>
+                        联系客服
+                    </div>
+                    </div>
+                </div>
+                <div class="footTxtQt">
+                    <span class="footTxtQtSpn">质量标准</span>
+                    <div>
+                        <a href="#" class target="_blank">彩盒检验标准</a>
+                        <a href="#" class target="_blank">微坑普通材质检验标准</a>
+                        <a href="#" class target="_blank">胶片盒检验标准</a>
+                        <a href="#" class target="_blank">软包装检验标准</a>
+                        <a href="#" class target="_blank">精装盒检验标准</a>
+                        <a href="#" class target="_blank">EVA检验标准</a>
+                        <a href="#" class target="_blank">海绵检验标准</a>
+                        <a href="#" class target="_blank">珍珠棉检验标准</a>
+                        <a href="#" class target="_blank">吸塑检验标准</a>
+                        <a href="#" class target="_blank">标签检验标准</a>
+                        <a href="#" class target="_blank">吊牌检验标准</a>
+                        <a href="#" class target="_blank">说明书检验标准</a>
+                        <a href="#" class target="_blank">纸杯检验标准</a>
+                        <a href="#" class target="_blank">纸箱检验标准</a>
+                        <a href="#" class target="_blank">金属包装检验标准</a>
+                        <a href="#" class target="_blank">打样检验标准</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="footBottom">
+                <div class="comBox">
+                    <p class="footBottomPt">
+                        <a href="#" class target="_blank">关于分享印</a>
+                        <a href="#" class target="_blank">服务协议</a>
+                        <a href="#" class target="_blank">联系我们</a>
+                        <a href="#" class target="_blank">生产商</a>
+                        <a href="#" class target="_blank">人才招聘</a>
+                        <a href="#" class target="_blank">资质证书</a>
+                    </p>
+                    <p class="footBicp">
+                        <a href="#" rel="nofollow" target="_blank">粤ICP备17066124号</a>
+                        <span>|</span>
+                        版权所有 广州市分享印信息技术有限公司
+                    </p>
+                    <div class="footBimgBx">
+                        <a href="#" target="_blank" class="footBimg1"></a>
+                        <a href="#" target="_blank" class="footBimg2"></a>
+                        <a href="#" target="_blank" class="footBimg3"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="livechat-girl animated">
+                <a href="#" target="_blank" title="在线QQ客服" class="im-qq qq-a">
+                    <img src="https://www.aocai.cn/img/en_3.db34e981.png" alt="" class="girl">
+                    <div class="livechat-hint rd-notice-tooltip rd-notice-type-success rd-notice-pisition-left single-line show_hint">
+                        <div class="rd-notice-content">嘿, 我来帮您！</div>
+                    </div>
+                </a>
+                <div class="animated-circles animated">
+                    <div class="cricle c-1"></div>
+                    <div class="cricle c-2"></div>
+                    <div class="cricle c-3"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        // 获取元素
+        var tabs = document.querySelector('.tabs');
+        var lis = tabs.querySelectorAll('span');
+        var items = document.querySelectorAll('.item');
+        // for循环绑定点击事件
+        for (var i = 0; i < lis.length; i++) {
+            // 开始给5个小li 设置索引号 
+            lis[i].setAttribute('index', i);
+            lis[i].onclick = function() {
+                // 1. 上的模块选项卡，点击某一个，当前这一个底色会是红色，其余不变（排他思想） 修改类名的方式
+
+                // 干掉所有人 其余的li清除 class 这个类
+                for (var i = 0; i < lis.length; i++) {
+                    lis[i].className = '';
+                }
+                // 留下我自己 
+                this.className = 'hover';
+                // 2. 下面的显示内容模块
+                var index = this.getAttribute('index');
+                console.log(index);
+                // 干掉所有人 让其余的item 这些div 隐藏
+                for (var i = 0; i < items.length; i++) {
+                    items[i].style.display = 'none';
+                }
+                // 留下我自己 让对应的item 显示出来
+                items[index].style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

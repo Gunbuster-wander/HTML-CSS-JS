@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注冊</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <header class="el-header header-nav" style="height: auto;">
+        <div  class="wbb_top">
+            <div   class="wbb_top_content clearfix" style="position: relative;">
+                <div   class="fl" style="display: flex;"> 您好！ 
+                    <span style="display: flex;" >
+                        <a href="login.html">请登录</a>
+                        <i class="color1">|</i>
+                        <a href="register.html">免费注册</a>
+                    </span>
+                </div>
+                <div   class="fr">
+                    <a   href="../index.html">傲彩首页</a>
+                </div>
+                <div   class="clear"></div>
+            </div>
+        </div>
+        <div   class="logo_div">
+            <div   class="content">
+                <h1  >
+                    <a   href="#">
+                        <img   src="https://www.aocai.cn/img/logo.8a3304db.png">
+                        <img   src="https://www.aocai.cn/img/logo.12c2e733.gif" style="margin-top: 15px;">
+                    </a>
+                </h1>
+                <div   class="clear"></div>
+            </div>
+        </div>
+    </header>
+    <main   class="el-main login-main">
+        <div     class="w_login_0607">
+            <div   class="login_box register_box">
+                <div   class="login_content fr w_zhuce_0607">
+                    <h3   style="font-size: 18px; font-weight: lighter; color: rgb(128, 128, 128);">
+                        会员注册 
+                    </h3>
+                    <div   class="zhuce_list0607" style="margin-top: 22px;">
+                        <div   class="el-input el-input-group el-input-group--prepend">
+                            <div class="el-input-group__prepend">
+                                手机号码
+                            </div>
+                            <input type="text" autocomplete="off" placeholder="请输入手机号" class="el-input__inner">
+                            <!---->
+                            <!---->
+                            <!---->
+                            <!---->
+                        </div>
+                    </div>
+                    <div   class="zhuce_list0607">
+                        <div class="el-input el-input-group el-input-group--append el-input-group--prepend">
+                            <div class="el-input-group__prepend">
+                                注册验证码
+                            </div>
+                            <input type="text" autocomplete="off" placeholder="请输入注册验证码" class="el-input__inner">
+                            <!---->
+                            <!---->
+                            <div class="el-input-group__append">
+                                <img src="data:image/jpeg;base64,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" align="middle" class="verifyCodeImg">
+                            </div>
+                            <!---->
+                        </div>
+                        <div   class="clear"></div>
+                    </div>
+                    <div   class="zhuce_list0607 zidingyi_yuanhu">
+                        <div class="el-input el-input-group el-input-group--append el-input-group--prepend">
+                            <div class="el-input-group__prepend">
+                                手机验证码
+                            </div>
+                            <input type="text" autocomplete="off" placeholder="请输入手机验证码" class="el-input__inner">
+                            <!---->
+                            <!---->
+                            <div class="el-input-group__append">
+                                <button   disabled="disabled" type="button" class="el-button el-button--primary is-disabled" style="padding-left: 5px; padding-right: 5px; width: 110px; position: relative; left: 20px; border: 0px;">
+                                    <!---->
+                                    <!---->
+                                    <span>
+                                        获取短信验证码
+                                    </span>
+                                </button>
+                            </div>
+                            <!---->
+                        </div>
+                        <div   class="clear"></div>
+                    </div>
+                    <div   class="zhuce_list0607">
+                        <div   class="el-input el-input-group el-input-group--prepend el-input--suffix">
+                            <div class="el-input-group__prepend">
+                                设置密码
+                            </div>
+                            <input type="password" autocomplete="off" placeholder="请输入密码" class="el-input__inner"><!---->
+                            <span class="el-input__suffix">
+                                <span class="el-input__suffix-inner"><!----></span>
+                                <!---->
+                            </span>
+                            <!---->
+                            <!---->
+                        </div>
+                        <div   class="clear"></div>
+                    </div>
+                    <div   class="flex" style="margin: 15px 0px; justify-content: space-between; align-items: center;">
+                        <span>
+                            <input   name="is_agree" type="checkbox" checked="checked" style="vertical-align: sub;"> 
+                            <a   href="/news/detail?id=100" class="">《傲彩用户注册协议》</a>
+                        </span>
+                        <a   href="login.html" class="">会员登录</a>
+                    </div>
+                    <div   style="width: 100%; overflow: hidden;">
+                        <input   type="button" value="会员注册" class="w_submit0606" style="text-align: center;">
+                    </div>
+                </div>
+                <div   class="clear"></div>
+            </div>
+            <div   class="el-dialog__wrapper" style="display: none;">
+                <div role="dialog" aria-modal="true" aria-label="注册成功,完善用户资料" class="el-dialog" style="margin-top: 15vh; width: 700px;">
+                    <div class="el-dialog__header">
+                        <span class="el-dialog__title">注册成功,完善用户资料</span>
+                        <button type="button" aria-label="Close" class="el-dialog__headerbtn">
+                            <i class="el-dialog__close el-icon el-icon-close"></i>
+                        </button>
+                    </div>
+                    <!---->
+                    <!---->
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="index-footer footer" style="height: 60px;">
+        <div class="footTop">
+            <div class="comBox">
+                <ul class="footEnsure">
+                    <li>
+                        <img src="https://www.aocai.cn/img/foot1.3ffc94fd.png" alt="">
+                    </li>
+                    <li>
+                        <img src="https://www.aocai.cn/img/foot2.b8c0ca2e.png" alt="">
+                    </li>
+                    <li>
+                        <img src="https://www.aocai.cn/img/foot3.6db890c5.png" alt="">
+                    </li>
+                    <li>
+                        <img src="https://www.aocai.cn/img/foot4.d40e186e.png" alt="">
+                    </li>
+                </ul>
+                <div class="footTxtBx">
+                    <ul class="footTxtUl">
+                        <li>
+                            <h2>使用指南</h2>
+                            <div>
+                                <a href="#" class target="_blank">常见问题</a>
+                                <a href="#" class target="_blank">新手指南</a>
+                                <a href="#" class target="_blank">3D打样要求</a>
+                                <a href="#" class target="_blank">确认订单教程</a>
+                                <a href="#" class target="_blank">下载与打开刀模</a>
+                                <a href="#" class target="_blank">打样订单下单规范</a>
+                            </div>
+                        </li>
+                        <li>
+                            <h2>下单须知</h2>
+                            <div>
+                                <a href="#" class target="_blank">物流配送说明</a>
+                                <a href="#" class target="_blank">印刷资质要求与模板</a>
+                                <a href="#" class target="_blank">商品包装与收货通知</a>
+                                <a href="#" class target="_blank">规范化文件与刀模说明</a>
+                                <a href="#" class target="_blank">生产货期计算说明</a>
+                                <a href="#" class target="_blank">支付与发票须知</a>
+                            </div>
+                        </li>
+                        <li>
+                            <h2>售后服务</h2>
+                            <div>
+                                <a href="#" class target="_blank">退货与退款须知</a>
+                                <a href="#" class target="_blank">售后服务流程</a>
+                                <a href="#" class target="_blank">质量问题免费重做</a>
+                                <a href="#" class target="_blank">出货超时赔付承诺</a>
+                                <a href="#" class target="_blank">纸类包装仓储与存放须知</a>
+                            </div>
+                        </li>
+                        <li>
+                            <h2>包装设计模板</h2>
+                            <div>
+                                <a href="#" class target="_blank">设计模板购买说明</a>
+                                <a href="#" class target="_blank">设计模板版权声明</a>
+                                <a href="#" class target="_blank">包装设计师招募</a>
+                                <a href="#" class target="_blank">设计模板上传规范</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="footTel">
+                        <h1>0755-36567904</h1>
+                    <p class="footTelTime">
+                        周一至周五: 8:30-21:00
+                        <br>
+                        周六至周日: 9:00-18:00
+                    </p>
+                    <div class="footTContact">
+                        <span class="icon icon-contact"></span>
+                        联系客服
+                    </div>
+                    </div>
+                </div>
+                <div class="footTxtQt">
+                    <span class="footTxtQtSpn">质量标准</span>
+                    <div>
+                        <a href="#" class target="_blank">彩盒检验标准</a>
+                        <a href="#" class target="_blank">微坑普通材质检验标准</a>
+                        <a href="#" class target="_blank">胶片盒检验标准</a>
+                        <a href="#" class target="_blank">软包装检验标准</a>
+                        <a href="#" class target="_blank">精装盒检验标准</a>
+                        <a href="#" class target="_blank">EVA检验标准</a>
+                        <a href="#" class target="_blank">海绵检验标准</a>
+                        <a href="#" class target="_blank">珍珠棉检验标准</a>
+                        <a href="#" class target="_blank">吸塑检验标准</a>
+                        <a href="#" class target="_blank">标签检验标准</a>
+                        <a href="#" class target="_blank">吊牌检验标准</a>
+                        <a href="#" class target="_blank">说明书检验标准</a>
+                        <a href="#" class target="_blank">纸杯检验标准</a>
+                        <a href="#" class target="_blank">纸箱检验标准</a>
+                        <a href="#" class target="_blank">金属包装检验标准</a>
+                        <a href="#" class target="_blank">打样检验标准</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="footBottom">
+                <div class="comBox">
+                    <p class="footBottomPt">
+                        <a href="#" class target="_blank">关于分享印</a>
+                        <a href="#" class target="_blank">服务协议</a>
+                        <a href="#" class target="_blank">联系我们</a>
+                        <a href="#" class target="_blank">生产商</a>
+                        <a href="#" class target="_blank">人才招聘</a>
+                        <a href="#" class target="_blank">资质证书</a>
+                    </p>
+                    <p class="footBicp">
+                        <a href="#" rel="nofollow" target="_blank">粤ICP备17066124号</a>
+                        <span>|</span>
+                        版权所有 广州市分享印信息技术有限公司
+                    </p>
+                    <div class="footBimgBx">
+                        <a href="#" target="_blank" class="footBimg1"></a>
+                        <a href="#" target="_blank" class="footBimg2"></a>
+                        <a href="#" target="_blank" class="footBimg3"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="livechat-girl animated">
+                <a href="#" target="_blank" title="在线QQ客服" class="im-qq qq-a">
+                    <img src="https://www.aocai.cn/img/en_3.db34e981.png" alt="" class="girl">
+                    <div class="livechat-hint rd-notice-tooltip rd-notice-type-success rd-notice-pisition-left single-line show_hint">
+                        <div class="rd-notice-content">嘿, 我来帮您！</div>
+                    </div>
+                </a>
+                <div class="animated-circles animated">
+                    <div class="cricle c-1"></div>
+                    <div class="cricle c-2"></div>
+                    <div class="cricle c-3"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
